@@ -3,12 +3,12 @@ import Flask
 import pytextnow
 
 app = Flask(__name__)
+number = "9735259489"
+message = "test"
 
 @ app.route("/")
 def hello():
     return "weenine"
-number = "9735259489"
-message = "test"
 client = pytextnow.Client("alvarovapeshop", cookie="s%3AuO8tmZExHKPI8BHwhgt1bK8eA-uy78Vf.q5mEkCdh%2BQLQwIueotGknLQWrjy87Gz6dUocoJxZ2e8")
 client.send_sms(number, message)
 print(" Message from num1 sent to " + number + " With the message " + message)
