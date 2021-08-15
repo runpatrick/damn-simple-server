@@ -1,6 +1,5 @@
 from flask import Flask
 import pytextnow
-import sys
 
 app = Flask(__name__)
 
